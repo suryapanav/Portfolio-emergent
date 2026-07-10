@@ -41,7 +41,7 @@ export const PROJECTS = [
     title: "MindSync Aura — Digital Mental Health Journal",
     tag: "Web Development · Python",
     desc: "A mid-scale project in the web development domain using Python with SQL as the database. A desktop-based Digital Mental Health Journal that enables structured and continuous mental health tracking.",
-    img: "https://images.unsplash.com/photo-1622547748225-3fc4abd2cca0?crop=entropy&cs=srgb&fm=jpg&q=85&w=1200",
+    img: "https://customer-assets.emergentagent.com/job_surya-showcase-1/artifacts/xwchh9gc_image.png",
     stack: ["Python", "SQL", "Web"],
   },
   {
@@ -49,7 +49,7 @@ export const PROJECTS = [
     title: "Subscription Manager",
     tag: "Web Dev · UI/UX",
     desc: "A small-scale project in web development and UI/UX design. Manages subscriptions and provides a direct platform to subscribe and renew subscriptions in one place.",
-    img: "https://images.unsplash.com/photo-1617785899222-fe06b15b6dd5?crop=entropy&cs=srgb&fm=jpg&q=85&w=1200",
+    img: "https://customer-assets.emergentagent.com/job_surya-showcase-1/artifacts/kzls3km9_image.png",
     stack: ["UI/UX", "Web"],
   },
   {
@@ -57,8 +57,16 @@ export const PROJECTS = [
     title: "SmartNotes Pro — Dockerized Notes & Productivity System",
     tag: "Cloud Native · DevOps",
     desc: "A cloud-native productivity and notes management platform built with Docker and Kubernetes — demonstrating modern containerization and orchestration through a scalable, portable web app for notes, tasks, priorities and deadlines with a secure, responsive interface.",
-    img: "https://images.unsplash.com/photo-1618005198919-d3d4b5a92ead?crop=entropy&cs=srgb&fm=jpg&q=85&w=1200",
+    img: "https://customer-assets.emergentagent.com/job_surya-showcase-1/artifacts/2rkm3n3s_image.png",
     stack: ["Docker", "Kubernetes", "Web"],
+  },
+  {
+    id: "04",
+    title: "Automated Visual Design System for Seamless UI/UX Translation to Production-Ready Code",
+    tag: "AI · Full Stack",
+    desc: "Developed Restruct Warp, an AI-driven, full-stack visual web engineering platform featuring a drag-and-drop builder paired with an Application Server (FastAPI / Python). Engineered the frontend utilizing a Vite/React ecosystem to translate visual UI layouts into responsive, accessible web pages in real-time. Built an intelligent AI Orchestrator integrating LLM services (Claude/Groq) to automatically generate optimized, production-ready frontend and backend code blocks.",
+    img: "https://customer-assets.emergentagent.com/job_surya-showcase-1/artifacts/i448m7tk_image.png",
+    stack: ["FastAPI", "Vite/React", "Claude/Groq"],
   },
 ];
 
