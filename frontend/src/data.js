@@ -72,40 +72,42 @@ export const PROJECTS = [
 
 export const SKILL_GROUPS = [
   {
-    label: "Languages",
+    label: "Languages & Tools",
     items: [
-      { name: "JavaScript", level: 90 },
-      { name: "Python", level: 85 },
-      { name: "TypeScript", level: 70 },
-      { name: "C++", level: 65 },
-    ],
-  },
-  {
-    label: "Frameworks",
-    items: [
-      { name: "React", level: 90 },
-      { name: "FastAPI", level: 75 },
-      { name: "Node.js", level: 70 },
-      { name: "TailwindCSS", level: 88 },
+      { name: "Python", level: 80 },
+      { name: "C", level: 90 },
+      { name: "HTML", level: 80 },
+      { name: "Docker", level: 75 },
+      { name: "AIML", level: 70 },
     ],
   },
   {
     label: "Tools & Data",
     items: [
-      { name: "Git & GitHub", level: 90 },
-      { name: "MongoDB", level: 72 },
-      { name: "Figma", level: 68 },
-      { name: "SQL", level: 55 },
+      { name: "Power BI", level: 90 },
+      { name: "Vibe Coding", level: 100 },
+      { name: "MS Tools", level: 100 },
+      { name: "Advanced Excel", level: 90 },
+    ],
+  },
+  {
+    label: "Unique Skills",
+    items: [
+      { name: "Problem-solving & Logical Thinking", level: 100 },
+      { name: "Digital Marketing", level: 90 },
+      { name: "Leadership", level: 100 },
+      { name: "Management Skills", level: 100 },
+      { name: "Video Direction & Video Editing", level: 90 },
     ],
   },
 ];
 
 export const CERTIFICATES = [
-  { year: "2026", title: "Meta Front-End Developer Professional Certificate", org: "Coursera · Meta" },
-  { year: "2025", title: "Machine Learning Specialization", org: "Stanford Online · Andrew Ng" },
-  { year: "2025", title: "AWS Certified Cloud Practitioner", org: "Amazon Web Services" },
-  { year: "2024", title: "Google UX Design Certificate", org: "Google Career Certificates" },
-  { year: "2024", title: "Python for Everybody", org: "University of Michigan" },
+  { year: "2027", title: "Honours Degree", org: "In CSE by VTU" },
+  { year: "2024", title: "Machine Learning Specialization", org: "Plasmid" },
+  { year: "2025", title: "Artificial Intelligence and Block Chain Technologies", org: "NPTEL" },
+  { year: "2026", title: "Juniper Network (JNCAA)", org: "HPE" },
+  { year: "2026", title: "Salesforce", org: "TrailHead" },
 ];
 
 export const ACHIEVEMENTS = [
