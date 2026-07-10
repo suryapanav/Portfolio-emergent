@@ -24,7 +24,7 @@ const fadeUp = {
 };
 
 export const About = () => (
-  <section id="about" className="px-6 lg:px-12 py-32 border-y border-[#D9E0D2]" style={{ background: "linear-gradient(180deg, #EEF2E9 0%, #E5ECDE 100%)" }} data-testid="about-section">
+  <section id="about" className="px-6 lg:px-12 py-20 md:py-32 border-y border-[#D9E0D2]" style={{ background: "linear-gradient(180deg, #EEF2E9 0%, #E5ECDE 100%)" }} data-testid="about-section">
     <div className="max-w-7xl mx-auto">
       <motion.p
         initial={{ opacity: 0 }}
@@ -41,17 +41,17 @@ export const About = () => (
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.9 }}
-            className="sticky top-28 rounded-lg overflow-hidden border border-black/5"
+            className="md:sticky md:top-28 rounded-lg overflow-hidden border border-black/5 max-w-sm mx-auto md:max-w-none"
           >
             <img
               src="https://customer-assets.emergentagent.com/job_surya-showcase-1/artifacts/7ugvdog0_AI%20PIC.png"
               alt="Surya Panav portrait"
-              className="w-full h-[520px] object-cover object-top"
+              className="w-full h-[400px] sm:h-[460px] md:h-[520px] object-cover object-top"
               data-testid="about-portrait"
             />
           </motion.div>
         </div>
-        <div className="md:col-span-8 space-y-20">
+        <div className="md:col-span-8 space-y-12 md:space-y-20">
           {chapters.map((c, i) => (
             <motion.div
               key={c.num}

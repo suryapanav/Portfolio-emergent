@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { SKILL_GROUPS } from "../data";
 
 export const Skills = () => (
-  <section id="skills" className="px-6 lg:px-12 py-32 border-y border-[#C9E0DB]" style={{ background: "linear-gradient(180deg, #E9F3F1 0%, #DCEDE9 100%)" }} data-testid="skills-section">
+  <section id="skills" className="px-6 lg:px-12 py-20 md:py-32 border-y border-[#C9E0DB]" style={{ background: "linear-gradient(180deg, #E9F3F1 0%, #DCEDE9 100%)" }} data-testid="skills-section">
     <div className="max-w-7xl mx-auto">
       <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} className="mb-16 flex flex-col md:flex-row md:items-end md:justify-between gap-6">
         <div>

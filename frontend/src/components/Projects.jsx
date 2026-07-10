@@ -4,7 +4,7 @@ import { ArrowUpRight } from "lucide-react";
 import { PROJECTS } from "../data";
 
 export const Projects = () => (
-  <section id="projects" className="px-6 lg:px-12 py-32 border-y border-[#D4E0E8]" style={{ background: "linear-gradient(180deg, #EBF1F5 0%, #E1EAF1 100%)" }} data-testid="projects-section">
+  <section id="projects" className="px-6 lg:px-12 py-20 md:py-32 border-y border-[#D4E0E8]" style={{ background: "linear-gradient(180deg, #EBF1F5 0%, #E1EAF1 100%)" }} data-testid="projects-section">
     <div className="max-w-7xl mx-auto">
       <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} className="mb-16">
         <p className="text-sm tracking-[0.3em] uppercase text-[#5C5C5C] mb-4">( Selected Work )</p>

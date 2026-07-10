@@ -91,7 +91,7 @@ export const Header = ({ onNavigate }) => {
             className="lg:hidden overflow-hidden bg-[#F9F9F7]/95 border-b border-black/5"
             data-testid="mobile-nav"
           >
-            <div className="px-6 py-4 flex flex-col gap-4">
+            <div className="px-6 py-5 flex flex-col gap-4">
               {NAV_LINKS.map((l, i) => (
                 <button
                   key={l.href}
@@ -103,6 +103,17 @@ export const Header = ({ onNavigate }) => {
                   {l.label}
                 </button>
               ))}
+              <button
+                onClick={() => go("#contact")}
+                className="mt-2 flex items-center justify-center gap-2 w-full py-3.5 rounded-full bg-[#1A1A1A] text-[#F9F9F7] text-sm font-semibold"
+                data-testid="mobile-hire-cta"
+              >
+                <span className="relative flex w-2 h-2">
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#A8C6A1] opacity-75" />
+                  <span className="relative inline-flex rounded-full h-2 w-2 bg-[#7FB069]" />
+                </span>
+                Open to work — Contact me
+              </button>
             </div>
           </motion.nav>
         )}

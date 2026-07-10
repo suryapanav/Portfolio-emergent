@@ -4,7 +4,7 @@ import { Award, ArrowUpRight } from "lucide-react";
 import { CERTIFICATES } from "../data";
 
 export const Certificates = () => (
-  <section id="certificates" className="px-6 lg:px-12 py-32 border-y border-[#E8DFC0]" style={{ background: "linear-gradient(180deg, #F9F4E3 0%, #F3EACD 60%, #EEE2BC 100%)" }} data-testid="certificates-section">
+  <section id="certificates" className="px-6 lg:px-12 py-20 md:py-32 border-y border-[#E8DFC0]" style={{ background: "linear-gradient(180deg, #F9F4E3 0%, #F3EACD 60%, #EEE2BC 100%)" }} data-testid="certificates-section">
     <div className="max-w-7xl mx-auto">
       <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} className="mb-16 flex flex-col md:flex-row md:items-end md:justify-between gap-6">
         <div>

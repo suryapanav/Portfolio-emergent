@@ -4,7 +4,7 @@ import { Trophy } from "lucide-react";
 import { ACHIEVEMENTS } from "../data";
 
 export const Achievements = () => (
-  <section id="achievements" className="px-6 lg:px-12 py-32 border-y border-[#DCD4E6]" style={{ background: "linear-gradient(180deg, #EFEAF5 0%, #E7DFF0 100%)" }} data-testid="achievements-section">
+  <section id="achievements" className="px-6 lg:px-12 py-20 md:py-32 border-y border-[#DCD4E6]" style={{ background: "linear-gradient(180deg, #EFEAF5 0%, #E7DFF0 100%)" }} data-testid="achievements-section">
     <div className="max-w-7xl mx-auto">
       <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} className="mb-16 flex flex-col md:flex-row md:items-end md:justify-between gap-6">
         <div>

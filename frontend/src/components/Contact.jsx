@@ -39,7 +39,7 @@ export const Contact = () => {
   const inputCls = "w-full bg-white border border-[#E5E5DF] rounded-lg px-5 py-4 text-sm focus:outline-none focus:border-[#1A1A1A] transition-colors duration-300 placeholder:text-[#9C9C9C]";
 
   return (
-    <section id="contact" className="px-6 lg:px-12 py-32 border-t border-[#E8D8D4]" style={{ background: "linear-gradient(180deg, #F7EEEC 0%, #F1E3DF 100%)" }} data-testid="contact-section">
+    <section id="contact" className="px-6 lg:px-12 py-20 md:py-32 border-t border-[#E8D8D4]" style={{ background: "linear-gradient(180deg, #F7EEEC 0%, #F1E3DF 100%)" }} data-testid="contact-section">
       <div className="max-w-7xl mx-auto">
         <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} className="mb-16">
           <p className="text-sm tracking-[0.3em] uppercase text-[#5C5C5C] mb-4">( Say Hello )</p>

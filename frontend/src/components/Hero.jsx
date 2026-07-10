@@ -30,7 +30,7 @@ export const Hero = ({ onNavigate }) => {
     <section
       ref={ref}
       id="top"
-      className="relative min-h-screen flex flex-col justify-center px-6 lg:px-12 pt-32 pb-20 overflow-hidden"
+      className="relative min-h-screen flex flex-col justify-center px-6 lg:px-12 pt-28 lg:pt-32 pb-16 lg:pb-20 overflow-hidden"
       style={{ background: "linear-gradient(180deg, #F9F9F7 0%, #F3F1EC 100%)" }}
       data-testid="hero-section"
     >
@@ -93,7 +93,7 @@ export const Hero = ({ onNavigate }) => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 1.5, duration: 0.8 }}
-            className="mt-14 flex gap-10 border-t border-black/10 pt-8 max-w-md"
+            className="mt-10 lg:mt-14 flex flex-wrap gap-6 sm:gap-10 border-t border-black/10 pt-8 max-w-md"
             data-testid="hero-stats"
           >
             {STATS.map((s) => (
@@ -110,11 +110,11 @@ export const Hero = ({ onNavigate }) => {
           animate={{ opacity: 1, scale: 1, rotate: 0 }}
           transition={{ delay: 0.9, duration: 1, ease: [0.22, 1, 0.36, 1] }}
           style={{ y: photoY }}
-          className="hidden lg:block lg:col-span-5 relative"
+          className="block lg:col-span-5 relative mt-6 lg:mt-0 max-w-md mx-auto lg:max-w-none w-full"
           data-testid="hero-photo"
         >
-          <div className="absolute -top-10 -left-10 z-20 animate-[spin_14s_linear_infinite]">
-            <svg viewBox="0 0 120 120" className="w-28 h-28">
+          <div className="absolute -top-8 -left-2 lg:-top-10 lg:-left-10 z-20 animate-[spin_14s_linear_infinite]">
+            <svg viewBox="0 0 120 120" className="w-20 h-20 lg:w-28 lg:h-28">
               <defs>
                 <path id="circlePath" d="M 60,60 m -46,0 a 46,46 0 1,1 92,0 a 46,46 0 1,1 -92,0" />
               </defs>
@@ -128,7 +128,7 @@ export const Hero = ({ onNavigate }) => {
               <img
                 src="https://customer-assets.emergentagent.com/job_surya-showcase-1/artifacts/7ugvdog0_AI%20PIC.png"
                 alt="Surya Panav"
-                className="w-full h-[520px] object-cover object-top"
+                className="w-full h-[400px] sm:h-[460px] lg:h-[520px] object-cover object-top"
               />
               <div className="absolute bottom-4 left-4 right-4 rounded-xl bg-white/80 backdrop-blur-md border border-white/60 px-5 py-3 flex items-center justify-between">
                 <span className="font-display font-bold text-sm tracking-tight">Surya Panav</span>
@@ -143,7 +143,7 @@ export const Hero = ({ onNavigate }) => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1.8 }}
-        className="absolute bottom-8 left-6 lg:left-12 flex items-center gap-3 text-[#5C5C5C] text-xs tracking-widest uppercase"
+        className="absolute bottom-8 left-6 lg:left-12 hidden sm:flex items-center gap-3 text-[#5C5C5C] text-xs tracking-widest uppercase"
       >
         <ArrowDown size={14} className="animate-bounce" /> Scroll to explore
       </motion.div>

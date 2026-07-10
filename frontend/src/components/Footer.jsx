@@ -5,7 +5,7 @@ import { Magnetic } from "./Magnetic";
 
 export const Footer = ({ onNavigate }) => (
   <footer className="bg-[#1A1A1A] text-[#F9F9F7]" data-testid="site-footer">
-    <div className="max-w-7xl mx-auto px-6 lg:px-12 py-32">
+    <div className="max-w-7xl mx-auto px-6 lg:px-12 py-20 md:py-32">
       <motion.div
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
