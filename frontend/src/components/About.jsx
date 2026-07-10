@@ -24,7 +24,7 @@ const fadeUp = {
 };
 
 export const About = () => (
-  <section id="about" className="px-6 lg:px-12 py-32" data-testid="about-section">
+  <section id="about" className="px-6 lg:px-12 py-32 border-y border-[#D9E0D2]" style={{ background: "linear-gradient(180deg, #EEF2E9 0%, #E5ECDE 100%)" }} data-testid="about-section">
     <div className="max-w-7xl mx-auto">
       <motion.p
         initial={{ opacity: 0 }}
@@ -60,10 +60,10 @@ export const About = () => (
               whileInView="show"
               viewport={{ once: true, margin: "-80px" }}
               custom={i}
-              className="grid grid-cols-12 gap-6 border-t border-[#E5E5DF] pt-8"
+              className="grid grid-cols-12 gap-6 border-t border-[#CDD8C4] pt-8"
               data-testid={`about-chapter-${c.num}`}
             >
-              <span className="col-span-2 font-display font-black text-3xl text-[#D8B4E2]">{c.num}</span>
+              <span className="col-span-2 font-display font-black text-3xl text-[#7C9873]">{c.num}</span>
               <div className="col-span-10">
                 <h2 className="font-display font-bold text-lg md:text-lg tracking-tight mb-4">{c.title}</h2>
                 <p className="text-[#5C5C5C] leading-relaxed max-w-xl">{c.text}</p>

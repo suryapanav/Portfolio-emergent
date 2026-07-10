@@ -4,7 +4,7 @@ import { ArrowUpRight } from "lucide-react";
 import { PROJECTS } from "../data";
 
 export const Projects = () => (
-  <section id="projects" className="px-6 lg:px-12 py-32" data-testid="projects-section">
+  <section id="projects" className="px-6 lg:px-12 py-32 border-y border-[#D4E0E8]" style={{ background: "linear-gradient(180deg, #EBF1F5 0%, #E1EAF1 100%)" }} data-testid="projects-section">
     <div className="max-w-7xl mx-auto">
       <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} className="mb-16">
         <p className="text-sm tracking-[0.3em] uppercase text-[#5C5C5C] mb-4">( Selected Work )</p>
@@ -26,7 +26,7 @@ export const Projects = () => (
                 </div>
                 <div className="p-8">
                   <div className="flex items-start justify-between mb-3">
-                    <span className="font-display font-black text-xl text-[#D8B4E2]">{p.id}</span>
+                    <span className="font-display font-black text-xl text-[#6E93B8]">{p.id}</span>
                     <ArrowUpRight size={20} className="text-[#5C5C5C] group-hover:text-[#1A1A1A] group-hover:rotate-45 transition-transform duration-300" />
                   </div>
                   <p className="text-xs tracking-widest uppercase text-[#5C5C5C] mb-2">{p.tag}</p>
@@ -34,7 +34,7 @@ export const Projects = () => (
                   <p className="text-sm text-[#5C5C5C] leading-relaxed mb-6">{p.desc}</p>
                   <div className="flex flex-wrap gap-2">
                     {p.stack.map((s) => (
-                      <span key={s} className="px-3 py-1 text-xs rounded-full bg-[#EBEBE5] text-[#1A1A1A]">{s}</span>
+                      <span key={s} className="px-3 py-1 text-xs rounded-full bg-[#E1EAF1] text-[#3B5568]">{s}</span>
                     ))}
                   </div>
                 </div>
