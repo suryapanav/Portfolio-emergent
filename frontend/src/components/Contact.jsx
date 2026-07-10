@@ -9,9 +9,9 @@ const API = `${process.env.REACT_APP_BACKEND_URL}/api`;
 
 const SOCIALS = [
   { icon: Mail, label: "sunkarasuryapanav@gmail.com", href: "mailto:sunkarasuryapanav@gmail.com" },
-  { icon: Github, label: "github.com/suryapanav", href: "https://github.com/suryapanav" },
-  { icon: Linkedin, label: "linkedin.com/in/surya-panav", href: "https://www.linkedin.com/in/surya-panav-938ab832a?utm_source=share_via&utm_content=profile&utm_medium=member_android" },
   { icon: Instagram, label: "@_suryapanav_", href: "https://www.instagram.com/_suryapanav_?igsh=MXRucDZ4NG0wMXB1dg==" },
+  { icon: Linkedin, label: "linkedin.com/in/surya-panav", href: "https://www.linkedin.com/in/surya-panav-938ab832a?utm_source=share_via&utm_content=profile&utm_medium=member_android" },
+  { icon: Github, label: "github.com/suryapanav", href: "https://github.com/suryapanav" },
 ];
 
 export const Contact = () => {

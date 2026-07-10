@@ -14,7 +14,7 @@ const lineReveal = {
 
 const STATS = [
   { value: "15+", label: "Projects shipped" },
-  { value: "800+", label: "GitHub stars" },
+  { value: "50+", label: "Events Organized" },
   { value: "2×", label: "Hackathon winner" },
 ];
 

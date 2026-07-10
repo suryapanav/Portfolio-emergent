@@ -20,7 +20,7 @@ export const EXPERIENCE = [
   {
     num: "02",
     role: "Core Team Lead — Tech Fest",
-    org: "College Tech Fest",
+    org: "Quantum X",
     period: "2025",
     desc: "Led the core team coordinating multiple technical events, managing logistics and driving engagement for hundreds of participants.",
     tags: ["Team Lead", "Event Ops"],

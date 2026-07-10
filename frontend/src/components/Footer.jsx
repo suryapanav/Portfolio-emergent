@@ -1,7 +1,20 @@
 import { motion } from "framer-motion";
-import { ArrowUpRight, Github, Linkedin, Instagram, Mail } from "lucide-react";
+import { ArrowUpRight, Github, Linkedin, Instagram, Mail, FileText, Download } from "lucide-react";
 import { NAV_LINKS } from "../data";
 import { Magnetic } from "./Magnetic";
+
+const RESUME_URL = "https://customer-assets.emergentagent.com/job_surya-showcase-1/artifacts/fe76gms9_Surya%20Resume.pdf";
+
+const downloadResume = async () => {
+  const res = await fetch(RESUME_URL);
+  const blob = await res.blob();
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement("a");
+  a.href = url;
+  a.download = "Surya_Panav_Resume.pdf";
+  a.click();
+  URL.revokeObjectURL(url);
+};
 
 export const Footer = ({ onNavigate }) => (
   <footer className="bg-[#1A1A1A] text-[#F9F9F7]" data-testid="site-footer">
@@ -26,7 +39,7 @@ export const Footer = ({ onNavigate }) => (
       <div className="grid md:grid-cols-3 gap-12 mt-24 pt-12 border-t border-white/10">
         <div>
           <p className="font-display font-extrabold text-lg tracking-tighter mb-4">SURYA PANAV<span className="text-[#D8B4E2]">.</span></p>
-          <p className="text-sm text-white/50 leading-relaxed max-w-xs">Student. Builder. Breaker of things (intentionally). Crafting playful web experiences from a dorm room.</p>
+          <p className="text-sm text-white/50 leading-relaxed max-w-xs">Student. AI Creator. Breaker of things (intentionally). Crafting playful web experiences from a dorm room.</p>
         </div>
         <div data-testid="footer-quick-links">
           <p className="text-xs tracking-[0.3em] uppercase text-white/40 mb-6">Quick Links</p>
@@ -41,6 +54,30 @@ export const Footer = ({ onNavigate }) => (
                 {l.label}
               </button>
             ))}
+            <div className="col-span-2 mt-3 flex items-center gap-3">
+              <Magnetic strength={0.25}>
+                <a
+                  href={RESUME_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 px-5 py-2.5 rounded-full text-[#1A1A1A] text-sm font-bold hover:opacity-90 transition-opacity duration-300"
+                  style={{ background: "linear-gradient(90deg, #D8B4E2, #A7C7E7)" }}
+                  data-testid="footer-link-resume"
+                >
+                  <FileText size={15} /> Resume
+                </a>
+              </Magnetic>
+              <Magnetic strength={0.25}>
+                <button
+                  onClick={downloadResume}
+                  className="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:bg-white hover:text-[#1A1A1A] transition-colors duration-300"
+                  data-testid="footer-resume-download"
+                  aria-label="Download resume"
+                >
+                  <Download size={15} />
+                </button>
+              </Magnetic>
+            </div>
           </div>
         </div>
         <div>

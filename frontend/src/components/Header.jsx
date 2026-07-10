@@ -1,8 +1,10 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence, useScroll, useSpring } from "framer-motion";
-import { List, X, Sparkle } from "lucide-react";
+import { List, X, Sparkle, ArrowUpRight } from "lucide-react";
 import { NAV_LINKS } from "../data";
 import { Magnetic } from "./Magnetic";
+
+const NAV_COLORS = ["#7C9873", "#C98A4B", "#C9AE5A", "#A385C2", "#6E93B8", "#5FA79D", "#C98A8A"];
 
 export const Header = ({ onNavigate }) => {
   const [open, setOpen] = useState(false);
@@ -46,7 +48,7 @@ export const Header = ({ onNavigate }) => {
           </span>
           <span className="hidden sm:flex flex-col items-start leading-none">
             <span className="font-display font-extrabold tracking-tighter text-base">SURYA PANAV</span>
-            <span className="text-[10px] tracking-[0.25em] uppercase text-[#5C5C5C]">Student · Builder</span>
+            <span className="text-[10px] tracking-[0.25em] uppercase text-[#5C5C5C]">Student · AI Creator</span>
           </span>
         </button>
         <nav className="hidden lg:flex items-center gap-7" data-testid="header-nav">
@@ -88,24 +90,38 @@ export const Header = ({ onNavigate }) => {
             initial={{ height: 0, opacity: 0 }}
             animate={{ height: "auto", opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
-            className="lg:hidden overflow-hidden bg-[#F9F9F7]/95 border-b border-black/5"
+            transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
+            className="lg:hidden overflow-hidden backdrop-blur-xl bg-[#F9F9F7]/95 border-b border-black/5"
             data-testid="mobile-nav"
           >
-            <div className="px-6 py-5 flex flex-col gap-4">
+            <div className="px-6 py-6 flex flex-col gap-1 relative">
+              <div className="absolute top-0 left-6 right-6 h-[2px] rounded-full" style={{ background: "linear-gradient(90deg, #D8B4E2, #A7C7E7, #C7A87C, #A8C6A1)" }} aria-hidden />
               {NAV_LINKS.map((l, i) => (
-                <button
+                <motion.button
                   key={l.href}
+                  initial={{ opacity: 0, x: -24 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ delay: 0.08 + i * 0.06, duration: 0.45, ease: [0.22, 1, 0.36, 1] }}
                   onClick={() => go(l.href)}
-                  className="text-left font-display text-2xl font-bold tracking-tighter flex items-baseline gap-3"
+                  className="group flex items-center justify-between py-3.5 border-b border-black/5 active:bg-black/[0.03] rounded-md px-2"
                   data-testid={`mobile-nav-${l.label.toLowerCase()}`}
                 >
-                  <span className="text-xs text-[#C9A5D6]">0{i + 1}</span>
-                  {l.label}
-                </button>
+                  <span className="flex items-center gap-4">
+                    <span className="w-2.5 h-2.5 rounded-full" style={{ background: NAV_COLORS[i % NAV_COLORS.length] }} />
+                    <span className="font-display text-2xl font-bold tracking-tighter">{l.label}</span>
+                  </span>
+                  <span className="flex items-center gap-3">
+                    <span className="font-display font-black text-xs" style={{ color: NAV_COLORS[i % NAV_COLORS.length] }}>0{i + 1}</span>
+                    <ArrowUpRight size={17} className="text-[#B5B5AD] group-hover:rotate-45 transition-transform duration-300" />
+                  </span>
+                </motion.button>
               ))}
-              <button
+              <motion.button
+                initial={{ opacity: 0, y: 14 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.08 + NAV_LINKS.length * 0.06, duration: 0.45 }}
                 onClick={() => go("#contact")}
-                className="mt-2 flex items-center justify-center gap-2 w-full py-3.5 rounded-full bg-[#1A1A1A] text-[#F9F9F7] text-sm font-semibold"
+                className="mt-4 flex items-center justify-center gap-2 w-full py-4 rounded-full bg-[#1A1A1A] text-[#F9F9F7] text-sm font-semibold"
                 data-testid="mobile-hire-cta"
               >
                 <span className="relative flex w-2 h-2">
@@ -113,7 +129,15 @@ export const Header = ({ onNavigate }) => {
                   <span className="relative inline-flex rounded-full h-2 w-2 bg-[#7FB069]" />
                 </span>
                 Open to work — Contact me
-              </button>
+              </motion.button>
+              <motion.p
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 0.6 }}
+                className="mt-3 text-center font-serif-sig italic text-sm text-[#8A8A82]"
+              >
+                Surya Panav — Student · AI Creator
+              </motion.p>
             </div>
           </motion.nav>
         )}
