@@ -32,7 +32,7 @@ export const Achievements = () => (
                     {a.num}
                   </span>
                   <div className="flex items-center gap-3">
-                    <span className="px-3 py-1 rounded-full text-xs font-semibold tracking-widest bg-[#E9E0F2] text-[#7A5C99]">{a.year}</span>
+                    {a.year && <span className="px-3 py-1 rounded-full text-xs font-semibold tracking-widest bg-[#E9E0F2] text-[#7A5C99]">{a.year}</span>}
                     <span className="w-10 h-10 rounded-full bg-[#E9E0F2] flex items-center justify-center group-hover:bg-[#B294CC] transition-colors duration-500">
                       <Trophy size={16} className="text-[#7A5C99] group-hover:text-[#FAF8FC] transition-colors duration-500" />
                     </span>

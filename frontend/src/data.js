@@ -73,10 +73,10 @@ export const CERTIFICATES = [
 ];
 
 export const ACHIEVEMENTS = [
-  { num: "01", title: "Smart India Hackathon — Winner", detail: "Led a 6-member team to build an accessibility-first transit app, beating 40,000+ teams nationwide.", year: "2025" },
-  { num: "02", title: "Google Solution Challenge — Top 100", detail: "Global recognition for CampusFlow among 5,000+ university submissions.", year: "2025" },
-  { num: "03", title: "Dean's List — 4 Consecutive Semesters", detail: "Top 2% of the computer science cohort while shipping side projects.", year: "2024–26" },
-  { num: "04", title: "800+ GitHub Stars on Orbital UI", detail: "Open-source component library adopted by developers in 30+ countries.", year: "2024" },
+  { num: "01", title: "Campus Ambassador", detail: "Representing my college as a Campus Ambassador, connecting students with opportunities, organizing events, and fostering a vibrant community. Building bridges between students and organizations while promoting innovation and collaboration on campus.", year: "" },
+  { num: "02", title: "Core Team Lead — Tech Fest", detail: "Leading the core team for our college Tech Fest, coordinating multiple technical events, managing logistics, and bringing together students to showcase innovation and creativity. Driving engagement and creating memorable experiences for participants.", year: "" },
+  { num: "03", title: "MVP of Basketball Championship", detail: "Recognized as the Most Valuable Player in the college basketball championship for exceptional performance, leadership on court, and contributing to the team's victory.", year: "" },
+  { num: "04", title: "Academic Excellence", detail: "Maintained a strong 9.19 CGPA in Computer Science and Engineering studies at New Horizon College of Engineering.", year: "" },
 ];
 
 export const MARQUEE_ITEMS = [
