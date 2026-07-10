@@ -1,0 +1,94 @@
+{
+  "theme": "light",
+  "typography": {
+    "headings": {
+      "family": "Cabinet Grotesk",
+      "fallback": "sans-serif",
+      "weights": ["400", "700", "900"],
+      "usage": "Use tight letter spacing (tracking-tighter). No Inter for headings. Keep it high-impact."
+    },
+    "body": {
+      "family": "Manrope",
+      "fallback": "sans-serif",
+      "weights": ["400", "500"],
+      "usage": "Loose line height (leading-relaxed). Left-aligned."
+    },
+    "signature": {
+      "family": "Playfair Display",
+      "fallback": "serif",
+      "usage": "Used for the 'SURYA PANAV' on-load masked line-by-line reveal."
+    }
+  },
+  "colors": {
+    "background": "#F9F9F7",
+    "surface": "#FFFFFF",
+    "text_primary": "#1A1A1A",
+    "text_secondary": "#5C5C5C",
+    "accent_primary": "#1A1A1A",
+    "accent_subtle": "#EBEBE5",
+    "glow_effect": "rgba(216, 180, 226, 0.3)",
+    "border": "#E5E5DF"
+  },
+  "visual_enhancers": {
+    "cursor": "Implement a custom framer-motion cursor. Main dot follows pointer exactly. Secondary glowing orb trails behind (using glow_effect color). Add 'magnetic' snapping to buttons/links on hover.",
+    "magnetic_buttons": "Use framer-motion to create magnetic buttons. The button itself moves slightly towards the cursor on hover.",
+    "smooth_scroll": "Implement @studio-freight/lenis for momentum scrolling. It gives a premium 'weight' to the scroll.",
+    "tilt_cards": "Use react-parallax-tilt or framer-motion for 3D tilt effects on Project cards.",
+    "glassmorphism": "For sticky header: backdrop-blur-xl bg-[#F9F9F7]/70 border-b border-black/5. Ensure 1px inner border for clarity."
+  },
+  "sections": {
+    "header": "Sticky nav (z-50, glassmorphism). Logo on left, links on right. DO NOT hide behind hamburger menu on desktop.",
+    "hero": "Kinetic hero. Massive typography. 'SURYA PANAV' signature with on-load masked line-by-line reveal (Framer Motion). Subtle parallax on scroll. High contrast text.",
+    "about": "Numbered manifesto chapters (01. Identity, 02. Vision). Asymmetrical bento layout.",
+    "marquee": "Slow editorial marquee separating sections. Pale background, dark earthy text. Gap-32.",
+    "projects": "3D tilt cards. High-density grid (Bento A). Image max-h-[80vh] for mobile.",
+    "certificates_achievements": "List based or Bento grid. Use subtle roundness (max 8px). Crisp borders.",
+    "skills": "Floating badges or a kinetic texture background.",
+    "contact": "Contact form (Shadcn customized) + direct email/social links. Left-aligned inputs.",
+    "footer": "Massive 'Let's Talk' CTA. Quick links bar. Very generous padding (py-32). Dark footer strategy (Invert colors: Dark bg, light text)."
+  },
+  "motion": {
+    "scroll_reveals": "Use framer-motion 'whileInView' or 'useInView' for stagger entrance animations.",
+    "parallax": "Framer motion 'useScroll' and 'useTransform' for subtle y-axis shifting on hero and images."
+  },
+  "components": {
+    "buttons": "Pill-shaped or max-rounded, sharp interactions. Use framer-motion for magnetic pull.",
+    "cards": "Subtle borders (border-black/5), flat backgrounds, no heavy shadows. Lift (-translate-y-1) on hover."
+  },
+  "images": [
+    {
+      "url": "https://images.unsplash.com/photo-1622547748225-3fc4abd2cca0?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzh8MHwxfHNlYXJjaHwxfHxtaW5pbWFsaXN0JTIwYWJzdHJhY3QlMjAzZCUyMHBhc3RlbHxlbnwwfHx8fDE3ODM2ODY3Njd8MA&ixlib=rb-4.1.0&q=85",
+      "description": "Abstract 3D visual",
+      "category": "projects"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1617785899222-fe06b15b6dd5?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAxODF8MHwxfHNlYXJjaHwxfHxtaW5pbWFsaXN0JTIwdGVjaCUyMGFwcCUyMG1vY2t1cCUyMHdoaXRlfGVufDB8fHx8MTc4MzY4Njc4MHww&ixlib=rb-4.1.0&q=85",
+      "description": "Minimalist tech mockup",
+      "category": "projects"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1618005198919-d3d4b5a92ead?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzh8MHwxfHNlYXJjaHwyfHxtaW5pbWFsaXN0JTIwYWJzdHJhY3QlMjAzZCUyMHBhc3RlbHxlbnwwfHx8fDE3ODM2ODY3Njd8MA&ixlib=rb-4.1.0&q=85",
+      "description": "Pastel spheres",
+      "category": "projects"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NTJ8MHwxfHNlYXJjaHwxfHxhZXN0aGV0aWMlMjB5b3VuZyUyMHByb2Zlc3Npb25hbCUyMHBvcnRyYWl0JTIwbmF0dXJhbCUyMGxpZ2h0fGVufDB8fHx8MTc4MzY4Njc2N3ww&ixlib=rb-4.1.0&q=85",
+      "description": "Aesthetic portrait",
+      "category": "about"
+    }
+  ],
+  "universal_guidelines": [
+    "You tend to converge toward generic, 'on distribution' outputs. Avoid this: make creative, distinctive frontends that surprise and delight.",
+    "Do not use dark colors as gradients.",
+    "Don't make generic centered layouts. Create depth through layered design elements with z-index hierarchy.",
+    "Use 2-3x more spacing than feels comfortable (e.g., p-8, p-12, p-24).",
+    "NEVER use universal transitions (transition: all).",
+    "DO NOT center align the app container (.App { text-align: center; }).",
+    "All interactive and key informational elements MUST include a data-testid attribute.",
+    "Always use modern button styles like pill-shaped, or sharp button with interaction animations.",
+    "Every interaction needs micro-animations - hover states, transitions, parallax effects, and entrance animations.",
+    "DO NOT use complete transparent background in header, overlays, any surface that has content under it.",
+    "Do not use AI assistant Emoji characters. Use @phosphor-icons/react or lucide-react.",
+    "Provide installation commands for extra libraries like framer-motion, @studio-freight/lenis, react-fast-marquee, react-parallax-tilt, @phosphor-icons/react."
+  ]
+}
