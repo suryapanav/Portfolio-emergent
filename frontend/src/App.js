@@ -1,54 +1,56 @@
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import "@/App.css";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import axios from "axios";
-import { HOME } from "@/constants/testIds";
+import Lenis from "lenis";
+import { Toaster } from "sonner";
+import { Cursor } from "./components/Cursor";
+import { Header } from "./components/Header";
+import { Hero } from "./components/Hero";
+import { About } from "./components/About";
+import { EditorialMarquee } from "./components/EditorialMarquee";
+import { Projects } from "./components/Projects";
+import { Skills } from "./components/Skills";
+import { Certificates } from "./components/Certificates";
+import { Achievements } from "./components/Achievements";
+import { Contact } from "./components/Contact";
+import { Footer } from "./components/Footer";
 
-const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
-const API = `${BACKEND_URL}/api`;
+function App() {
+  const lenisRef = useRef(null);
 
-const Home = () => {
-  const helloWorldApi = async () => {
-    try {
-      const response = await axios.get(`${API}/`);
-      console.log(response.data.message);
-    } catch (e) {
-      console.error(e, `errored out requesting / api`);
+  useEffect(() => {
+    const lenis = new Lenis({ lerp: 0.09, smoothWheel: true });
+    lenisRef.current = lenis;
+    const raf = (time) => {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    };
+    requestAnimationFrame(raf);
+    return () => lenis.destroy();
+  }, []);
+
+  const navigate = (href) => {
+    const el = document.querySelector(href);
+    if (el && lenisRef.current) {
+      lenisRef.current.scrollTo(el, { offset: -64, duration: 1.4 });
     }
   };
 
-  useEffect(() => {
-    helloWorldApi();
-  }, []);
-
   return (
-    <div>
-      <header className="App-header">
-        <a
-          data-testid={HOME.emergentLink}
-          className="App-link"
-          href="https://emergent.sh"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img src="https://avatars.githubusercontent.com/in/1201222?s=120&u=2686cf91179bbafbc7a71bfbc43004cf9ae1acea&v=4" />
-        </a>
-        <p className="mt-5">Building something incredible ~!</p>
-      </header>
-    </div>
-  );
-};
-
-function App() {
-  return (
-    <div className="App">
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Home />}>
-            <Route index element={<Home />} />
-          </Route>
-        </Routes>
-      </BrowserRouter>
+    <div className="App grain">
+      <Cursor />
+      <Toaster position="bottom-right" richColors />
+      <Header onNavigate={navigate} />
+      <main>
+        <Hero onNavigate={navigate} />
+        <EditorialMarquee />
+        <About />
+        <Projects />
+        <Skills />
+        <Certificates />
+        <Achievements />
+        <Contact />
+      </main>
+      <Footer onNavigate={navigate} />
     </div>
   );
 }
