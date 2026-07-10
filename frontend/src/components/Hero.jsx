@@ -51,7 +51,7 @@ export const Hero = ({ onNavigate }) => {
               <Sparkle size={13} className="text-[#C9A5D6]" /> Portfolio — Est. 2026
             </motion.span>
           </span>
-          <h1 className="font-display font-black tracking-tighter leading-[0.9] text-4xl sm:text-5xl lg:text-6xl xl:text-[6.8rem]" data-testid="hero-name">
+          <h1 className="font-display font-black tracking-tighter leading-[0.9] text-5xl sm:text-6xl lg:text-7xl xl:text-[7.6rem]" data-testid="hero-name">
             <span className="hero-mask">
               <motion.span variants={lineReveal} initial="hidden" animate="show" custom={1} className="block">
                 SURYA
@@ -65,7 +65,7 @@ export const Hero = ({ onNavigate }) => {
           </h1>
           <span className="hero-mask mt-8">
             <motion.span variants={lineReveal} initial="hidden" animate="show" custom={3} className="block font-serif-sig italic text-lg md:text-lg text-[#5C5C5C] max-w-xl">
-              A final-year CSE honours student who builds, breaks, and rebuilds the web — one curious experiment at a time.
+              A final-year Honours in CSE student who builds, breaks, and rebuilds the web — one curious experiment at a time.
             </motion.span>
           </span>
           <motion.div
