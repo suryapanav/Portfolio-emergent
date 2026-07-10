@@ -4,17 +4,17 @@ const chapters = [
   {
     num: "01",
     title: "Identity",
-    text: "I'm Surya Panav — a computer science student obsessed with the space where design meets engineering. I treat every project like a lab: hypothesize, build, break, learn.",
+    text: "I'm Surya Panav — a final-year computer science student pursuing honours in CSE, passionate about where design meets engineering. I turn design-informed ideas into robust implementations that reduce time-to-market.",
   },
   {
     num: "02",
     title: "Vision",
-    text: "The web should feel alive. I chase interfaces that respond to touch, motion, and curiosity — software that surprises people the way a good magic trick does.",
+    text: "To begin my professional journey in a supportive and challenging environment where I can contribute sincerely while learning and growing.",
   },
   {
     num: "03",
     title: "Now",
-    text: "Currently deep in open-source, hackathons, and machine learning coursework. Shipping small things weekly, and one ambitious thing every semester.",
+    text: "Accelerating my expertise in AI, Machine Learning, and Blockchain technologies through rigorous open-source contributions and advanced coursework. I maintain a high-velocity development pace—shipping production-ready micro-projects weekly while architecting one high-impact, long-term technical solution each semester.",
   },
 ];
 
@@ -44,9 +44,9 @@ export const About = () => (
             className="sticky top-28 rounded-lg overflow-hidden border border-black/5"
           >
             <img
-              src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?crop=entropy&cs=srgb&fm=jpg&q=85&w=800"
+              src="https://customer-assets.emergentagent.com/job_surya-showcase-1/artifacts/7ugvdog0_AI%20PIC.png"
               alt="Surya Panav portrait"
-              className="w-full h-[420px] object-cover grayscale hover:grayscale-0 transition-[filter] duration-700"
+              className="w-full h-[520px] object-cover object-top"
               data-testid="about-portrait"
             />
           </motion.div>
