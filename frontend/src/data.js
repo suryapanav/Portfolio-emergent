@@ -34,19 +34,34 @@ export const PROJECTS = [
   },
 ];
 
-export const SKILLS = [
-  { name: "JavaScript", level: "Advanced" },
-  { name: "Python", level: "Advanced" },
-  { name: "React", level: "Advanced" },
-  { name: "FastAPI", level: "Intermediate" },
-  { name: "MongoDB", level: "Intermediate" },
-  { name: "TypeScript", level: "Intermediate" },
-  { name: "Node.js", level: "Intermediate" },
-  { name: "Figma", level: "Intermediate" },
-  { name: "C++", level: "Intermediate" },
-  { name: "Git & GitHub", level: "Advanced" },
-  { name: "TailwindCSS", level: "Advanced" },
-  { name: "SQL", level: "Beginner" },
+export const SKILL_GROUPS = [
+  {
+    label: "Languages",
+    items: [
+      { name: "JavaScript", level: 90 },
+      { name: "Python", level: 85 },
+      { name: "TypeScript", level: 70 },
+      { name: "C++", level: 65 },
+    ],
+  },
+  {
+    label: "Frameworks",
+    items: [
+      { name: "React", level: 90 },
+      { name: "FastAPI", level: 75 },
+      { name: "Node.js", level: 70 },
+      { name: "TailwindCSS", level: 88 },
+    ],
+  },
+  {
+    label: "Tools & Data",
+    items: [
+      { name: "Git & GitHub", level: 90 },
+      { name: "MongoDB", level: 72 },
+      { name: "Figma", level: 68 },
+      { name: "SQL", level: 55 },
+    ],
+  },
 ];
 
 export const CERTIFICATES = [
