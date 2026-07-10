@@ -34,7 +34,7 @@ export const Experience = () => (
                 <div className="group bg-[#FDF8F0] border border-[#EBD9C3] rounded-lg p-8 hover:-translate-y-1 hover:border-[#C98A4B] transition-[transform,border-color] duration-500">
                   <div className="flex items-center justify-between mb-4">
                     <span className="font-display font-black text-2xl text-transparent" style={{ WebkitTextStroke: "1.5px #C98A4B" }}>{e.num}</span>
-                    <span className="px-3 py-1 rounded-full text-xs font-semibold tracking-widest bg-[#F3E3CB] text-[#96602A]">{e.period}</span>
+                    {e.period && <span className="px-3 py-1 rounded-full text-xs font-semibold tracking-widest bg-[#F3E3CB] text-[#96602A]">{e.period}</span>}
                   </div>
                   <h3 className="font-display font-bold text-lg tracking-tight text-[#2E2214]">{e.role}</h3>
                   <p className="text-sm font-medium text-[#B07E45] mt-1 mb-4">{e.org}</p>
