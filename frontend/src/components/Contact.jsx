@@ -2,16 +2,16 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import axios from "axios";
 import { toast } from "sonner";
-import { Mail, Github, Linkedin, Twitter, Send } from "lucide-react";
+import { Mail, Github, Linkedin, Instagram, Send } from "lucide-react";
 import { Magnetic } from "./Magnetic";
 
 const API = `${process.env.REACT_APP_BACKEND_URL}/api`;
 
 const SOCIALS = [
-  { icon: Mail, label: "surya.panav@gmail.com", href: "mailto:surya.panav@gmail.com" },
-  { icon: Github, label: "github.com/suryapanav", href: "https://github.com" },
-  { icon: Linkedin, label: "linkedin.com/in/suryapanav", href: "https://linkedin.com" },
-  { icon: Twitter, label: "@suryapanav", href: "https://twitter.com" },
+  { icon: Mail, label: "sunkarasuryapanav@gmail.com", href: "mailto:sunkarasuryapanav@gmail.com" },
+  { icon: Github, label: "github.com/suryapanav", href: "https://github.com/suryapanav" },
+  { icon: Linkedin, label: "linkedin.com/in/surya-panav", href: "https://www.linkedin.com/in/surya-panav-938ab832a?utm_source=share_via&utm_content=profile&utm_medium=member_android" },
+  { icon: Instagram, label: "@_suryapanav_", href: "https://www.instagram.com/_suryapanav_?igsh=MXRucDZ4NG0wMXB1dg==" },
 ];
 
 export const Contact = () => {

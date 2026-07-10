@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowUpRight, Github, Linkedin, Twitter, Mail } from "lucide-react";
+import { ArrowUpRight, Github, Linkedin, Instagram, Mail } from "lucide-react";
 import { NAV_LINKS } from "../data";
 import { Magnetic } from "./Magnetic";
 
@@ -47,10 +47,10 @@ export const Footer = ({ onNavigate }) => (
           <p className="text-xs tracking-[0.3em] uppercase text-white/40 mb-6">Elsewhere</p>
           <div className="flex gap-4">
             {[
-              { icon: Github, href: "https://github.com", label: "github" },
-              { icon: Linkedin, href: "https://linkedin.com", label: "linkedin" },
-              { icon: Twitter, href: "https://twitter.com", label: "twitter" },
-              { icon: Mail, href: "mailto:surya.panav@gmail.com", label: "email" },
+              { icon: Github, href: "https://github.com/suryapanav", label: "github" },
+              { icon: Linkedin, href: "https://www.linkedin.com/in/surya-panav-938ab832a?utm_source=share_via&utm_content=profile&utm_medium=member_android", label: "linkedin" },
+              { icon: Instagram, href: "https://www.instagram.com/_suryapanav_?igsh=MXRucDZ4NG0wMXB1dg==", label: "instagram" },
+              { icon: Mail, href: "mailto:sunkarasuryapanav@gmail.com", label: "email" },
             ].map((s) => (
               <Magnetic key={s.label}>
                 <a
