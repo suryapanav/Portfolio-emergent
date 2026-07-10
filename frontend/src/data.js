@@ -1,10 +1,38 @@
 export const NAV_LINKS = [
   { label: "About", href: "#about" },
+  { label: "Experience", href: "#experience" },
   { label: "Certificates", href: "#certificates" },
   { label: "Achievements", href: "#achievements" },
   { label: "Projects", href: "#projects" },
   { label: "Skills", href: "#skills" },
   { label: "Contact", href: "#contact" },
+];
+
+export const EXPERIENCE = [
+  {
+    num: "01",
+    role: "Campus Ambassador",
+    org: "New Horizon College of Engineering",
+    period: "2025 — Present",
+    desc: "Representing the college, connecting students with opportunities, organizing events and fostering a vibrant campus community.",
+    tags: ["Leadership", "Community", "Events"],
+  },
+  {
+    num: "02",
+    role: "Core Team Lead — Tech Fest",
+    org: "College Tech Fest",
+    period: "2025",
+    desc: "Led the core team coordinating multiple technical events, managing logistics and driving engagement for hundreds of participants.",
+    tags: ["Team Lead", "Event Ops"],
+  },
+  {
+    num: "03",
+    role: "Open Source Contributor",
+    org: "GitHub Community",
+    period: "2024 — Present",
+    desc: "Contributing to open-source projects across web and AI tooling — shipping fixes, features and documentation improvements.",
+    tags: ["Open Source", "Collaboration"],
+  },
 ];
 
 export const PROJECTS = [

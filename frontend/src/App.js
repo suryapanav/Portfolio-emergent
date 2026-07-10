@@ -6,6 +6,7 @@ import { Cursor } from "./components/Cursor";
 import { Header } from "./components/Header";
 import { Hero } from "./components/Hero";
 import { About } from "./components/About";
+import { Experience } from "./components/Experience";
 import { EditorialMarquee } from "./components/EditorialMarquee";
 import { Projects } from "./components/Projects";
 import { Skills } from "./components/Skills";
@@ -44,6 +45,7 @@ function App() {
         <Hero onNavigate={navigate} />
         <EditorialMarquee />
         <About />
+        <Experience />
         <Projects />
         <Skills />
         <Certificates />
