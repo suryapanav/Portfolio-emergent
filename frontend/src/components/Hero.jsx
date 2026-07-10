@@ -48,7 +48,7 @@ export const Hero = ({ onNavigate }) => {
         <motion.div style={{ y, opacity }} className="lg:col-span-7">
           <span className="hero-mask">
             <motion.span variants={lineReveal} initial="hidden" animate="show" custom={0} className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/70 border border-black/5 text-xs font-semibold tracking-[0.25em] uppercase text-[#5C5C5C] mb-8">
-              <Sparkle size={13} className="text-[#C9A5D6]" /> Portfolio — Est. 2026
+              <Sparkle size={13} className="text-[#C9A5D6]" /> Historical anchor — Oct 14. 2005
             </motion.span>
           </span>
           <h1 className="font-display font-black tracking-tighter leading-[0.9] text-5xl sm:text-6xl lg:text-7xl xl:text-[7.6rem]" data-testid="hero-name">
